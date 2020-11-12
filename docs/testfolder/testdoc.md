@@ -1,4 +1,9 @@
+---
+id: testdoc
+title: Linking Test-doc
+sidebar_label: Link Test Doc
+---
 
-#testo presto
+# testo presto
 
 [test](/docs/mdx)
