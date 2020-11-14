@@ -5,6 +5,7 @@ module.exports = {
     // Docusaurus: ['doc1', 'doc2', 'doc3'],
     'Files and Folders': [
       'filesandfolders/showopenfilepicker',
+      'filesandfolders/filesystemdirectoryhandle',
       'filesandfolders/showdirectorypicker'
     ],
     Features: ['mdx']
