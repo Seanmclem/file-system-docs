@@ -100,5 +100,7 @@ So, again, you can use it to access a file or traverse deeper itno more director
 ```
 
 
+...Using the directory itself as an asyn iterator?
+
 
 [test](/docs/mdx)

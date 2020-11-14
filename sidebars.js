@@ -6,6 +6,7 @@ module.exports = {
     'Files and Folders': [
       'filesandfolders/showopenfilepicker',
       'filesandfolders/filesystemdirectoryhandle',
+      'filesandfolders/filesystemfilehandle',
       'filesandfolders/showdirectorypicker'
     ],
     Features: ['mdx']
