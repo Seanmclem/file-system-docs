@@ -6,4 +6,4 @@ sidebar_label: FileSystemFileHandle
 
 
 
-Note to self, just use other fs project for code tests
+Note to self, use a test.tsx in this project

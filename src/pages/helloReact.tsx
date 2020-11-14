@@ -1,4 +1,5 @@
 import React from 'react';
+// @ts-ignore
 import Layout from '@theme/Layout';
 
 function Hello() {
