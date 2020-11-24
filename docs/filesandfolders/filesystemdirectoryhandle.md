@@ -104,7 +104,8 @@ So, again, you can use it to access a file or traverse deeper itno more director
 ```
 
 
-...Using the directory itself as an asyn iterator?
+### Using no method
+You can point your array-iterator loop directly at the directory handle and get the same result as using the entries() function on the handle.
 
 
 [test](/docs/mdx)
