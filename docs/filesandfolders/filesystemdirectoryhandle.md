@@ -20,6 +20,7 @@ async function toArray(asyncIterator){
         array.push(fileSystemhandle);
     }
     return array;
+}
 ```
 
 > _Data output from a function like above - will yield usable data as detailed below_
@@ -37,10 +38,11 @@ then it's a FileSystem*Directory*Handle, and if "kind" value is "file" then it's
 kind: "directory"
 name: "chromium-fs-api-examples-ts"
 ```
-
+---
 ## Methods
 
-**.keys()** - Returns a string-key for each of the drectory children from the iterator, 
+### **.keys()** 
+Returns a string-key for each of the drectory children from the iterator, 
 which is just the name of the folder, one for every handle/child.
 
 ```javascript
@@ -50,8 +52,9 @@ which is just the name of the folder, one for every handle/child.
     "chromium-fs-api-examples-ts"
 ]
 ```
-
-**.values()** - Returns an iterator of the selected directories children. Which would be a FileSystemFileHandle or FileSystemDirectoryHandle  <br />
+---
+### **.values()** 
+Returns an iterator of the selected directories children. Which would be a FileSystemFileHandle or FileSystemDirectoryHandle  <br />
 for each of the children, from the iterator.  <br />
 
 Each child will contain `kind/name` values, and also all file or directory `methods` -since each child is also a FileSystemHandle.
@@ -66,12 +69,13 @@ So each can be used to access a file or traverse deeper into more directories.
     },
     {
         kind: "file",
-        name: "filesystem_api_tests"
+        name: "pic-example.png"
     }
 ]
 ```
-
-**.entries()** - Returns an item for each of the directory children from the iterator. <br />
+---
+### **.entries()**
+Returns an item for each of the directory children from the iterator. <br />
 Each item contains an array of 2 items.<br />
 `Item 0` is just a string of the name of the child file/folder, <br />
 and `Item 1` is a FileSystemHandle of that child. <br />
