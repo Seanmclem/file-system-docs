@@ -1,11 +1,10 @@
 ---
-id: filesystemfilehandle
-title: A File Reference
-sidebar_label: FileSystemFileHandle
+id: showdirectorypicker
+title: Opening a directory
+sidebar_label: ShowDirectoryPicker
 ---
 
-## FileSystemFileHandle
-
+## ShowDirectoryPicker
 
 * 
 *  

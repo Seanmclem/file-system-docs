@@ -5,12 +5,15 @@ sidebar_label: FileSystemDirectoryHandle
 ---
 
 ## FileSystemDirectoryHandle
-        
-* It's an iterator of FileSystemHandle.  
+
+* Obtained from opening a directory with window.[showDirectoryPicker](/filesandfolders/showdirectorypicker)(), or from being in the contents of another FileSystemDirectoryHandle    
+* It contains a couple data points and some methods to act on its children, which would be the files or folders contained in the directory.
+* Each child is also a FileSystem*File*Handle or FileSystem*Directory*Handle, which are FileSystemHandles with a `type` of "file" or "directory"
+
 * Data: {`{ kind: "directory" | "file", name: string }`}
 * Methods;  keys(), values(), entries(), or the directory itself as an async iterable.
 * Each method returns NativeFileSystemDirectoryIterator, aka {`AsyncIterableIterator<FileSystemHandle>`}
-* Loop over the iterator with a function resemling the following to get an array of FileSystemHandles for every item in the directory. 
+* Loop over the iterator with a function resemling the following to get certain results, depending on the method, for every item in the directory. 
 
 ```javascript
 /// Extracting array of FileSystemHandles from the async iterator pulled from keys(), values(), or entries()
@@ -23,13 +26,8 @@ async function toArray(asyncIterator){
 }
 ```
 
-> _Data output from a function like above - will yield usable data as detailed below_
+---
 
-
-
-You will see the terms FileSystemHandle/ FileSystem*File*Handle/ FileSystem*Directory*Handle used
-interchangeably. Basically they are all FileSystemHandles, but if their "kind" is value "directory" 
-then it's a FileSystem*Directory*Handle, and if "kind" value is "file" then it's a FileSystem*File*Handle
 
 ## Data
 
