@@ -9,7 +9,7 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
-    "poop": "GIT_USER=<seanmclem> USE_SSH=true yarn deploy"
+    "publish": "GIT_USER=seanmclem USE_SSH=true yarn deploy"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.70",
