@@ -6,7 +6,7 @@ sidebar_label: FileSystemDirectoryHandle
 
 ## FileSystemDirectoryHandle
 
-* Obtained from opening a directory with window.[showDirectoryPicker](/filesandfolders/showdirectorypicker)(), or from being in the contents of another FileSystemDirectoryHandle    
+* Obtained from opening a directory with window.[showDirectoryPicker](/docs/filesandfolders/showdirectorypicker)(), or from being in the contents of another FileSystemDirectoryHandle    
 * It contains a couple data points and some methods to act on its children, which would be the files or folders contained in the directory.
 * Each child is also a FileSystem*File*Handle or FileSystem*Directory*Handle, which are FileSystemHandles with a `type` of "file" or "directory"
 
